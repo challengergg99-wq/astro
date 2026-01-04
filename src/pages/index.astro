@@ -1,4 +1,9 @@
 ---
+const title = "viva chile";
+const imageerror = "https://www.publicdomainpictures.net/pictures/190000/nahled/sad-dog-1468499671wYW.jpg";
+const red = await fetch("https://dog.ceo/api/breeds/image/random");
+const redData = await red.json();
+const imagendog = redData.message || imageerror;
 
 ---
 
@@ -11,6 +16,21 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>{title}</h1>
+		<img src={imagendog} alt="A random dog" style="max-width: 400px;height:auto"/>
+
+		<div><button id="chile-button">
+			Viva Chile
+		</button></div>
+
+		<div>
+			<img id="chile-button2" style="max-width: 400px;height:auto"/>
+		</div>
+
 	</body>
 </html>
+
+<script>
+	import {hola } from "./cat.ts";
+	hola();
+</script>
