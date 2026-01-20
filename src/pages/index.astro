@@ -1,35 +1,29 @@
 ---
-const title = "viva chile";
-const imageerror = "https://www.publicdomainpictures.net/pictures/190000/nahled/sad-dog-1468499671wYW.jpg";
-const red = await fetch("https://dog.ceo/api/breeds/image/random");
-const redData = await red.json();
-const imagendog = redData.message || imageerror;
-
+import Layout from "../layouts/Layout.astro"
+import PlayListItemCard from "@/components/PlayListItemCard.astro"
+import { playlists } from "@/lib/data"
+import Greeting from "@/components/Greeting.svelte"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>{title}</h1>
-		<img src={imagendog} alt="A random dog" style="max-width: 400px;height:auto"/>
+<Layout title="Spotify Clone">
+  <div
+    id="playlist-container"
+    class="relative transition-all duration-1000 bg-green-600"
+  >
+    <!-- <PageHeader /> -->
 
-		<div><button id="chile-button">
-			Viva Chile
-		</button></div>
-		<div>
-			<img id="chile-button2" style="max-width: 400px;height:auto"/>
-		</div>
+    <div class="relative z-10 px-6 pt-10">
+      <Greeting />
+      <div class="flex flex-wrap mt-6 gap-4">
+        {playlists.map((playlist) => <PlayListItemCard playlist={playlist} />)}
+      </div>
 
-	</body>
-</html>
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 -z-[1]"
+      >
+      </div>
+    </div>
 
-<script>
-	import {hola } from "./cat.ts";
-	hola();
-</script>
+    <style></style>
+  </div>
+</Layout>
