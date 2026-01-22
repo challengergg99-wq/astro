@@ -4,6 +4,7 @@ import HomeIcon from "@/icons/Home.astro"
 import SearchIcon from "@/icons/Search.astro"
 import SideMenuItem from "./SideMenuItem.astro"
 import SideMenuCard from "./SideMenuCard.astro"
+import AuthDropdown from "./AuthDropdown.tsx"
 
 import { playlists } from "@/lib/data"
 ---
@@ -32,5 +33,9 @@ import { playlists } from "@/lib/data"
 
       {playlists.map((playlist) => <SideMenuCard playlist={playlist} />)}
     </ul>
+  </div>
+
+  <div class="bg-zinc-900 rounded-lg p-2">
+    <AuthDropdown client:load />
   </div>
 </nav>

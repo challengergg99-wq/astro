@@ -13,56 +13,56 @@ export const playlists: Playlist[] = [
   {
     id: '1',
     albumId: 1,
-    title: "Chill Lo-Fi Music",
+    title: "The Fellowship's Journey",
     color: colors.yellow,
     cover:
       "https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353",
-    artists: ["NoSpirit", "Casiio"],
+    artists: ["Gandalf the Grey", "Frodo Baggins"],
   },
   {
     id: '2',
     albumId: 2,
-    title: "Lo-Fi Chill Session",
+    title: "Elven Lullabies",
     color: colors.green,
     cover:
       "https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187",
-    artists: ["Kupla", "Blue Fox"],
+    artists: ["Legolas", "Arwen"],
   },
   {
     id: '3',
     albumId: 3,
-    title: "Study Session",
+    title: "Hobbit's Rest",
     color: colors.rose,
     cover:
       "https://f4.bcbits.com/img/a1435058381_65.jpg",
-    artists: ["Tenno", "xander", "Team Astro"],
+    artists: ["Bilbo Baggins", "Samwise Gamgee", "Peregrin Took"],
   },
   {
     id: '4',
     albumId: 4,
-    title: "Blue Note Study Time",
+    title: "Rings of Power",
     color: colors.blue,
     cover:
       "https://f4.bcbits.com/img/a1962013209_16.jpg",
-    artists: ["Raimu", "Yasumu"],
+    artists: ["Sauron", "Elrond"],
   },
   {
     id: '5',
     albumId: 5,
-    title: "Chau Saura Session",
+    title: "Mirkwood Melodies",
     color: colors.purple,
     cover:
       "https://f4.bcbits.com/img/a2793859494_16.jpg",
-    artists: ["Chau Saura", "amies", "kyu"],
+    artists: ["Thranduil", "Tauriel", "Bard the Bowman"],
   },
   {
     id: '6',
     albumId: 6,
-    title: "Like a Necessity",
+    title: "Mount Doom's Echo",
     color: colors.orange,
     cover:
       "https://f4.bcbits.com/img/a0363730459_16.jpg",
-    artists: ["WFS", "Nadav Cohen"],
+    artists: ["Gollum", "Smeagol"],
   },
 ];
 

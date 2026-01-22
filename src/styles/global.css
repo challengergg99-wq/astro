@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+/* Lord of the Rings Theme */
+:root {
+  --lotr-green: #2d5016;
+  --lotr-brown: #8b4513;
+  --lotr-gold: #daa520;
+  --lotr-dark: #1a1a1a;
+  --lotr-text: #f5f5dc;
+}
+
+/* Custom fonts if needed, but using system fonts for now */
+body {
+  font-family: 'Georgia', serif; /* Fantasy-like serif font */
+  background-color: var(--lotr-dark);
+  color: var(--lotr-text);
+}
